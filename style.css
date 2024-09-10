@@ -1,0 +1,164 @@
+/* Reset de margens e paddings padrão para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos nas dimensões totais dos elementos */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do site */
+    background-color: #f4f4f4; /* Cor de fundo clara para melhor legibilidade */
+    color: #333; /* Cor do texto para contraste adequado com o fundo */
+}
+
+/* Estilo da barra de navegação no topo da página */
+nav {
+    background-color: #007bff; /* Cor de fundo azul para destacar a navegação */
+    padding: 20px; /* Espaçamento interno para garantir que o conteúdo da barra de navegação não fique muito próximo das bordas */
+    display: flex; /* Usa flexbox para alinhar itens horizontalmente */
+    justify-content: space-between; /* Espaça a logo e os links de navegação ao máximo dentro da barra */
+    align-items: center; /* Alinha verticalmente o conteúdo da barra de navegação */
+}
+
+/* Estilo para o logotipo na barra de navegação */
+nav .logo {
+    font-size: 24px; /* Tamanho da fonte do logotipo para maior destaque */
+    color: #fff; /* Cor branca para contraste com o fundo azul */
+    font-weight: bold; /* Deixa o logotipo mais forte e visível */
+}
+
+/* Estilo para a lista de links de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores padrão das listas */
+    display: flex; /* Usa flexbox para alinhar os links horizontalmente */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+/* Estilo para cada item de navegação individualmente */
+nav ul li {
+    display: inline; /* Garante que cada item da lista fique na mesma linha */
+}
+
+/* Estilo para os links dentro dos itens de navegação */
+nav ul li a {
+    color: #fff; /* Cor branca para os links para melhor contraste */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    font-weight: bold; /* Deixa o texto dos links mais visível */
+    transition: color 0.3s; /* Animação suave de transição na cor do link ao passar o mouse */
+}
+
+/* Estilo quando o mouse passa sobre os links de navegação */
+nav ul li a:hover {
+    color: #ffdd57; /* Muda a cor dos links para um amarelo claro ao passar o mouse */
+}
+
+/* Estilo da seção principal com imagem de fundo */
+header {
+    background-image: url('internet2.png'); /* Define a imagem de fundo para a seção principal */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 60vh; /* Define a altura da seção principal em 60% da altura da janela de visualização */
+    display: flex; /* Usa flexbox para alinhar o conteúdo vertical e horizontalmente */
+    align-items: center; /* Centraliza verticalmente o conteúdo da seção principal */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo da seção principal */
+    color: #fff; /* Define a cor do texto para branco para contraste com a imagem de fundo */
+    position: relative; /* Posicionamento relativo para permitir a sobreposição de camadas */
+}
+
+/* Estilo para o overlay (camada de cor sobre a imagem de fundo) */
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente para destacar o texto sobre a imagem */
+    padding: 40px; /* Espaçamento interno para garantir que o texto não toque as bordas da caixa */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais moderno */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+/* Estilo para o título principal da seção */
+header h1 {
+    font-size: 36px; /* Tamanho grande para o título principal para garantir que seja o foco principal */
+    margin-bottom: 20px; /* Espaçamento inferior para separar o título do subtítulo */
+}
+
+/* Estilo para o subtítulo da seção */
+header h2 {
+    font-size: 24px; /* Tamanho médio para o subtítulo */
+    margin-bottom: 10px; /* Espaçamento inferior para separar o subtítulo do parágrafo */
+}
+
+/* Estilo para o parágrafo descritivo da seção */
+header p {
+    font-size: 18px; /* Tamanho da fonte para o parágrafo descritivo */
+}
+
+/* Estilo da seção do formulário de cadastro */
+.form-section {
+    padding: 40px; /* Espaçamento interno da seção de formulário */
+    max-width: 600px; /* Largura máxima da seção de formulário */
+    margin: 40px auto; /* Centraliza a seção de formulário na página */
+    background-color: #fff; /* Fundo branco para contraste com o resto do site */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+    border-radius: 10px; /* Bordas arredondadas para um visual moderno */
+}
+
+/* Remove bordas padrão do fieldset para deixar o design mais limpo */
+form fieldset {
+    border: none;
+}
+
+/* Estilo para o título da seção de formulário */
+form legend {
+    font-size: 24px; /* Tamanho grande para o título do formulário */
+    font-weight: bold; /* Deixa o título mais destacado */
+    margin-bottom: 20px; /* Espaçamento inferior para separar o título dos campos de formulário */
+}
+
+/* Estilo geral para rótulos dos campos de formulário */
+form label {
+    display: block; /* Força os rótulos a ocuparem toda a largura disponível */
+    margin-bottom: 8px; /* Espaçamento inferior para separar os rótulos dos campos de entrada */
+    font-weight: bold; /* Deixa o texto dos rótulos mais visível */
+}
+
+/* Estilo para campos de texto, senha, data e seleção */
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form select {
+    width: 100%; /* Faz os campos ocuparem toda a largura disponível */
+    padding: 10px; /* Espaçamento interno para maior área clicável */
+    margin-bottom: 20px; /* Espaçamento inferior para separar os campos uns dos outros */
+    border: 1px solid #ccc; /* Borda cinza clara para definir os limites dos campos */
+    border-radius: 5px; /* Bordas arredondadas para um visual moderno */
+    font-size: 16px; /* Tamanho da fonte dos campos de formulário */
+}
+
+/* Estilo para opções de gênero */
+.gender-options {
+    display: flex; /* Usa flexbox para alinhar as opções de gênero horizontalmente */
+    gap: 20px; /* Espaçamento entre as opções */
+    margin-bottom: 20px; /* Espaçamento inferior para separar do próximo campo */
+}
+
+/* Remove espaçamentos adicionais dos rótulos de gênero */
+.gender-options label {
+    margin: 0;
+}
+
+/* Estilo para o botão de submissão do formulário */
+form button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    padding: 10px; /* Espaçamento interno para maior área clicável */
+    background-color: #007bff; /* Cor de fundo azul para destacar o botão */
+    color: #fff; /* Cor branca para o texto do botão para contraste */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas para um visual moderno */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s; /* Animação suave na mudança de cor do botão ao passar o mouse */
+}
+
+/* Estilo para quando o mouse passa sobre o botão */
+form button:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse sobre o botão */
+}

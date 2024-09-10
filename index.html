@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+  <meta name="author" content="Gabriel Luciano, Caio Butkousky, Ruan Fernandes, João Torquato ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Link Telecomunicações</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Seção de navegação (menu do site) -->
+    <nav>
+        <!-- Logo da empresa, destacando o nome -->
+        <div class="logo">Click Link Telecom</div>
+        
+        <!-- Lista de links de navegação -->
+        <ul>
+            <li><a href="#">Home</a></li> <!-- Link para a página inicial -->
+            <li><a href="#">Feedback</a></li> <!-- Link para a página de feedback -->
+            <li><a href="#">Serviços</a></li> <!-- Link para a página de serviços -->
+            <li><a href="#">Contato</a></li> <!-- Link para a página de contato -->
+            <li><a href="#">Cadastre-se</a></li> <!-- Link para a página de cadastro -->
+        </ul>
+    </nav>
+
+    <!-- Seção principal com destaque para a oferta -->
+    <header>
+        <!-- Overlay para melhorar o contraste do texto sobre a imagem de fundo -->
+        <div class="overlay">
+            <h1>Sua internet MAIS rápida do que nunca.</h1> <!-- Título principal da oferta -->
+            <h2>Conheça nossos Planos!</h2> <!-- Subtítulo explicativo -->
+            <p>Planos de até 400 Megas!</p> <!-- Descrição adicional dos planos -->
+        </div>
+    </header>
+
+    <!-- Seção do formulário de cadastro -->
+    <section class="form-section">
+        <!-- Formulário com campos para cadastro de usuário -->
+        <form id="frmteste">
+            <fieldset>
+                <!-- Título da seção de cadastro -->
+                <legend>Cadastre-se Agora</legend>
+                
+                <!-- Campo para o nome do usuário -->
+                <label for="txtNome">Nome:</label>
+                <input type="text" id="txtNome" name="Nome" placeholder="Digite o nome..." required>
+
+                <!-- Campo para a senha do usuário -->
+                <label for="txtSenha">Senha:</label>
+                <input type="password" id="txtSenha" name="Senha" maxlength="8" placeholder="Digite sua senha..." required>
+
+                <!-- Campo para seleção de gênero -->
+                <div class="gender-options">
+                    <label>Sexo:</label>
+                    <input type="radio" name="Sexo" value="M"> Masculino
+                    <input type="radio" name="Sexo" value="F"> Feminino
+                </div>
+
+                <!-- Campo para a data de chegada -->
+                <label for="dt_chegada">Data de chegada:</label>
+                <input type="date" id="dt_chegada" name="dt_chegada">
+
+                <!-- Campo para seleção de valores -->
+                <label for="valores">Escolha o valor:</label>
+                <select name="Valor" id="valores">
+                    <option value="" selected disabled>Selecione</option> <!-- Placeholder para forçar o usuário a escolher -->
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                </select>
+
+                <!-- Botão para confirmar o cadastro -->
+                <button type="submit">Confirmar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
